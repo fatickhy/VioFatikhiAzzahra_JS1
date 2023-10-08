@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contoh program If Else</title>
+  </head>
+  <body>
+    <script>
+      var alfabet = prompt("Masukkan Huruf");
+      kecil =
+        alfabet == "a" ||
+        alfabet == "i" ||
+        alfabet == "u" ||
+        alfabet == "e" ||
+        alfabet == "o";
+      besar =
+        alfabet == "A" ||
+        alfabet == "I" ||
+        alfabet == "U" ||
+        alfabet == "E" ||
+        alfabet == "O";
+
+      if (kecil || besar) {
+        document.write("Huruf <b>" + alfabet + "</b>" + " adalah huruf Vokal");
+      } else {
+        document.write(
+          "Huruf <b>" + alfabet + "</b>" + " adalah huruf Konsonan"
+        );
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Program Function</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Program Hitung Keliling dan Luas Persegi</legend>
+      <input type="number" placeholder="Masukkan sisi persegi..." id="sisi"/>
+      <input type="button" onclick="hitung()" value="Hitung" />
+      <p>Luas Persegi : <span id="luas"></span></p>
+      <p>Keliling Persegi : <span id="keliling"></span></p>
+    </fieldset>
+    <script>
+      function hitung() {
+        var sisi = parseFloat(document.getElementById('sisi').value);
+        var luas = sisi * sisi;
+        var keliling = 4 * sisi;
+        document.getElementById("luas").textContent = luas;
+        document.getElementById("keliling").textContent = keliling;
+
+      }
+    </script>
+  </body>
+</html>
